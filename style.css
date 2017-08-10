@@ -1,0 +1,47 @@
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+button {
+	margin: 30px 0;
+	width: 200px;
+}
+
+.jumbotron {
+	height: 600px;
+}
+
+.divTextos {
+	margin-top: 450px;
+}
+
+body {
+	height: 3000px;
+}
+
+.img {
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	background-color: grey;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#containerAbout {
+	background-color: #c3c3c3;
+	float: left;
+}
+
+#containerPrincipal {
+	padding: 0 75px;
+}
+
+#containerPrincipal h1 {
+	margin-bottom: 30px;
+}
+
+.profile {
+	padding-bottom: 30px;
+}
