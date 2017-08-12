@@ -4,7 +4,7 @@ $("#columnaDeTextos").hide();
 //BOTON TEXTOS
 $("#textos").click(function(){
     $("#columnaDeTextos").slideToggle();
-    $("body").scrollTop(305);
+    $("body").scrollTop(605);
 });
 
 //TEXTOS
@@ -17,9 +17,14 @@ $("#texto2").click(function(){
 $("#texto3").click(function(){
 	$("#containerPrincipal").load("textos/texto3.html");
 });
-//ABOUT
-$("#containerAbout").hide();
-$("#containerAbout").toggle().load("about.html");
-$("#about").click(function(){
-	$("#containerAbout").toggle().load("about.html");
-});
+// //ABOUT
+// $("#containerAbout").hide();
+// $("#containerAbout").toggle().load("about.html");
+
+//close about
+$("#close").click(function() {
+	$("#containerAbout").hide();
+	$("#containerPrincipal").removeClass("col-md-7");
+	$("#containerPrincipal").addClass("col-md-10");
+})
+
