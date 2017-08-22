@@ -5,13 +5,21 @@ ul {
 }
 button {
 	margin: 30px 0;
-	width: 200px;
+/*	width: 200px;*/
+}
+
+#musica img {
+	width: 100%;
+	padding: 20px;
+}
+
+#musica {
+	font-family: 'Alice', cursive;
 }
 
 section {
-	background-color: #EEEEEE;
+	background-color: #feffd6;
 	margin-top: 0;
-	min-height: 580px;
 }
 
 .row {
@@ -19,13 +27,21 @@ section {
 	margin-bottom: 20px;
 }
 
+.body {
+	max-height: 35px;
+}
+
 .jumbotron {
-/*	height: 750px;*/
+	height: 735px;
 	margin-bottom: 0;
+	background-image: url("img/14.png");
+	background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .divTextos {
-	/*margin-top: 600px;*/
+	margin-top: 540px;
 }
 
 .img {
@@ -37,13 +53,9 @@ section {
 	margin-bottom: 40px;
 }
 
-#containerAbout {
-	background-color: #c3c3c3;
-	float: left;
-}
-
 #containerPrincipal {
 	padding: 50px 30px 50px 50px;
+	margin: 10px 30px;
 }
 
 #containerPrincipal h1 {
@@ -63,39 +75,53 @@ section {
 
 #columnaDeTextos button {
 	margin: 20px 0 20px 20px;
+	border: 0;
+	background-color: transparent;
+	font-size: 30px;
+	font-family: 'Vidaloka', serif;
+}
+
+#columnaDeTextos button:hover {
+	background-color: #ff7777;
+	color: white;
 }
 
 #columnaDeTextos {
-	background-color: #c3c3c3;
+	background-color: #C9DAF8;
 	border-radius: 10px;
 	padding: 15px 0;
 }
 
-#showAbout {
-	cursor: pointer;
-}
-
-#closedAbout {
-	padding-top: 200px;
-}
-
 #myCarousel {
-	margin: 30px;
+	/*margin: 30px;*/
 	width: 100%;
 	background-color: black;
 	margin: 20px 0 20px 0;
+	min-height: 1px;
+
 }
 
-#panelDeImagenes img {
-	height: 220px;
-	width: 220px;
-	margin: 13px;
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+display: block;
+height: auto;
+max-width: 100%;
+line-height: 1;
+width: 100%;
+}
+
+#containerPrincipal h1 {
+	font-size: 30px;
+}
+#containerPrincipal p {
+	font-size: 20px;
+	font-family: 'Arial', cursive;
 }
 
 
 footer {
 	min-height: 150px;
-	background-color: grey;
+	background-color: /*#116f93*/ #898989;
+	color: black;
 }
 
 footer h4 {
@@ -105,9 +131,9 @@ footer h4 {
 footer a {
 	padding: 6px 10px;
 	border-radius: 5px;
-	background-color: #c3c3c3;
+	background-color: transparent;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 footer a:hover {
@@ -118,6 +144,7 @@ footer span {
 	display: inline-block;
 	color: black;
 	margin: 0 10px;
+	background-color: transparent;
 }
 
 footer h2 {
@@ -129,5 +156,63 @@ footer h3 {
 }
 
 .footer a {
-	background-color: grey;
+	background-color: transparent;
 }
+
+
+#btnTextos, #btnImagenes, #btnMusica, #btnBio {
+	background-color: transparent;
+	border: 0;
+	padding: 30px;
+	font-family: 'Vidaloka', serif;
+	font-size: 40px;
+}
+
+#btnTextos:hover, #btnImagenes:hover, #btnMusica:hover, #btnBio:hover {
+	font-size: 60px;
+	padding: 15px;
+}
+
+#bio {
+	padding: 20px;
+}
+
+#bio p {
+	font-size: 20px;
+	font-family: 'Alice', cursive;
+	padding: 20px;
+}
+
+@media (max-width: 995px) {
+  .divTextos {
+    margin-top: 20px;
+  }
+  .divTextos button {
+  	color: white;
+    text-align: left !important;
+  }
+  .divTextos button:hover {
+  	color: white;
+    text-align: left;
+  }
+}
+
+@media (max-height: 668px) {
+  .jumbotron {
+    height: 667px;
+  }
+}
+
+@media (max-height: 568px) {
+  .jumbotron {
+    padding-top: 0px;
+    height: 568px;
+  }
+  .jumbotron button {
+  	margin-top: 0;
+  }
+  .jumbotron button:hover {
+  	color: white;
+  }
+}
+

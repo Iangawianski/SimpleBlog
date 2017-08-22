@@ -3,37 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<title>Blog de Juana</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Alice|Vidaloka" rel="stylesheet">
 </head>
 <body>
-
-
+<div class="body">
 	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 divTextos text-center">
-					<button type="button" id="btnTextos" class="btn btn-default btn-lg">Textos</button>
+				<div class="divTextos">
+					<div class="col-md-3 text-center">
+					<button type="button" id="btnTextos" class="btn btn-default btn-lg"><strong>Textos</strong></button>
 				</div>
-				<div class="col-md-2 divTextos text-center pull-right">
-					<button type="button" id="btnImagenes" class="btn btn-default btn-lg">Galeria</button>
+				<div class="col-md-3 text-center">
+					<button type="button" id="btnImagenes" class="btn btn-default btn-lg"><strong>Actriz</strong></button>
 				</div>
+				<div class="col-md-3 text-center">
+					<button type="button" id="btnMusica" class="btn btn-default btn-lg"><strong>Música</strong></button>
+				</div>
+				<div class="col-md-3 text-center">
+					<button type="button" id="btnBio" class="btn btn-default btn-lg"><strong>Bio</strong></button>
+				</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>		
 
+<iframe src="https://www.facebook.com/plugins/page.php?href=https:%2F%2Fwww.facebook.com%2Fcoderexample&tabs=timeline%2Cmessages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=496223437090509" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 <section class="container text-center">
 	<div class="row">
 
 	<!-- COLUMNA DE TEXTOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-		<div id="textos" class="col-md-8 columnaPrincipal">
+		<div id="textos" class="col-md-12 columnaPrincipal">
 			<div id="columnaDeTextos">
-				<button type="button" id="texto1" class="btn btn-default btn-lg">Primer texto</button>
-				<button type="button" id="texto2" class="btn btn-default btn-lg">Primer texto</button>
-				<button type="button" id="texto3" class="btn btn-default btn-lg">Primer texto</button>
-				<button type="button" id="texto4" class="btn btn-default btn-lg">Primer texto</button>
+				<button type="button" id="texto1" class="btn btn-default btn-lg">Tiras de harapos marrones sobre los hombres
+</button>
+				<button type="button" id="texto2" class="btn btn-default btn-lg">Se agotan los líquidos para que te aparezcas
+</button>
+				<button type="button" id="texto3" class="btn btn-default btn-lg">YANGSHUO Parte I</button>
+				<button type="button" id="texto4" class="btn btn-default btn-lg">Yo en Nueva York</button>
 				<button type="button" id="texto5" class="btn btn-default btn-lg">Primer texto</button>
 				<button type="button" id="texto6" class="btn btn-default btn-lg">Primer texto</button>
 				<button type="button" id="texto7" class="btn btn-default btn-lg">Primer texto</button>
@@ -46,8 +59,6 @@
 				<button type="button" id="texto14" class="btn btn-default btn-lg">Primer texto</button>
 				<button type="button" id="texto15" class="btn btn-default btn-lg">Primer texto</button>
 				<button type="button" id="texto16" class="btn btn-default btn-lg">Primer texto</button>
-				<button type="button" id="texto17" class="btn btn-default btn-lg">Primer texto</button>
-				<button type="button" id="texto18" class="btn btn-default btn-lg">Primer texto</button>
 			</div>
 			
 		
@@ -63,24 +74,28 @@
 			
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
+				  <!-- <ol class="carousel-indicators">
 				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				    <li data-target="#myCarousel" data-slide-to="1"></li>
 				    <li data-target="#myCarousel" data-slide-to="2"></li>
-				  </ol>
+				  </ol> -->
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner">
 				    <div class="item active">
-				      <img src="img/foto1.jpg" alt="Los Angeles">
+				      <img src="img/1.jpg">
 				    </div>
-
 				    <div class="item">
-				      <img src="img/foto2.jpg" alt="Chicago">
+				      <img src="img/3.jpg">
 				    </div>
-
+				    <!-- <div class="item active">
+				      <img src="img/4.jpg">
+				    </div> -->
 				    <div class="item">
-				      <img src="img/foto3.jpg" alt="New York">
+				      <img src="img/6.jpg">
+				    </div>
+				    <div class="item">
+				      <img src="img/7.png">
 				    </div>
 				  </div>
 
@@ -97,34 +112,65 @@
 
 		</div>
 
-		<div id="panelDeImagenes" class="col-md-8">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-			<img src="img/negro.jpg">
-		</div>
+	</div>
 
+	<div id="musica">
+		<div class="col-md-6">
+			<img src="img/m1.jpg">
+			<h3><strong>Baker’s Bakery, Puerto Rico 2017</strong></h3>
+			<img src="img/m3.jpg">
+			<h2><strong>PreciosaMalxriada</strong></h2>
+			<h3><strong>La banda interpreta su primer disco Música desde la Cárcel</strong></h3>
+			<img src="img/m4.png">
+			<h3><strong>Fiesta Jolié 2015</strong></h3>
+			<img src="img/m7.jpg">
+			<img src="img/m11.jpg">
+		</div>
+		<div class="col-md-6">
+			<h3><strong>Electric Child, Makena, Bs As, 2016</strong></h3>
+			<img src="img/m2.jpg">
+			
+			<img src="img/m5.jpg">
+			<h3><strong>Radio Colmena Club Cultural Matienzo 2016</strong></h3>
+			<img src="img/m6.jpg">			
+			<img src="img/m8.jpg">
+			<img src="img/m9.jpg">
+			<h3><strong>Performance 2015 Auditorio C.C. Matienzo Festival CANCHA</strong></h3>
+			<img src="img/m10.jpg">
+		</div>
+		<div class="col-md-12">
+			
+		</div>
+			
+			
+	</div>
+
+
+	<div id="bio" class="col-md-8 col-md-offset-2">
+		<h1>Juana Rinaldi</h1>
+		<p>Es actriz, música y estudiante de Artes de La Escritura en la UNA.
+Sus maestrxs de actuación han sido Feldman & Gobernori, Sabater, Romero, Lang, Briski, Herrera Nóbile y Pose.
+Trabajó con Marina Quesada, produciendo, co-guionando  y actuando en la obra  Si yo fuera yo ( La Hora de Clarice- Museo del Libro y de la Lengua , C.C.Matienzo, Festival LODO) siendo esta declarada de interés cultural por el Gob. de la Ciudad de Bs As y premiada con Mecenazgo.  
+Protagonizó S/T, obra de Gael Policano Rossi dirigida por Santiago Nader (4000 caracteres-Cuadernos de Picadero del INT).  
+Viajó a Puerto Rico para actuar en Part-Y presentándose en UPR Humacao, Escuela de Artes Plásticas de PR y Casa Ruth. Allì, colaboró en el fortalecimiento de nexos con artistas locales que intervinieron la pieza performàtica.
+Sus poesías fueron presentadas en el MAMBA y se han publicado en Hambre Web y en juanalabailanta.wordpress.com Ganó el concurso de poesía Texturas  y viajó a Chile a visitar a las casas de Pablo Neruda. 
+Parte de la compañía Copyleft (Prodanza 2016), gestada durante la Residencia LODO con la que fue premiada junto a Martín Tchira y otros, participó con performances propias en ciclos de C.C.Matienzo junto a Pablo Ragoni y como actriz  del Festival Escena trabajando en intercambio con Bolivia junto a Lescano y Señorales. Actualmente forma la banda PreciosaMalxriada y graba un Disco para el sello DDR. </p>
 	</div>
 		
 
-		<div id="columnaContainerAbout" class="col-md-4 pull-right">
+		<!-- <div id="columnaContainerAbout" class="col-md-4 pull-right">
 			<div id="containerAbout" class="profile pull-right">
 				<a id="close">
 					<h3><span class="ion-close-round"></span></h3>
 				</a>
 				<div class="img center-block"></div>
-				<h2>Ian Gawianski</h2>
-				<h4>Web Developer and Designer</h4>
-				<p>HTML - CSS - JavaScript</p>
+				<h2>Juana Rinaldi</h2>
+				<h4>Me gusta el arte y la literatura</h4>
+				<p>Poeta - Actriz - Musica</p>
 				<hr>
-				<h4>Conectamos?</h4>
-				<h5><span class="ion-social-instagram-outline"> Ian Gawianski</span></h5>
-				<h5><span class="ion-social-linkedin"> @iangawianski</span></h5>
+				<h4>Contacto</h4>
+				<h4><span class="ion-social-instagram-outline"> Juana Rinaldi</span></h4>
+				<h5><span class="ion-social-facebook"> Juana Rinaldi</span></h5>
 				<h5><span class="ion-ios-email-outline"> iangawianski12@gmail.com</span></h5>
 			</div>
 		</div>
@@ -132,7 +178,7 @@
 			<a id="showAbout"><h2><span class="ion-chevron-left"></span></h2></a>
 		</div>
 			
-	</div>
+	</div> -->
 </section>
 <footer>
 	<div class="container">
@@ -140,7 +186,7 @@
 			<div class="col-md-6 text-center">
 				<h4>Esta página fue desarrollada por:</h4>
 				<h4><strong>Ian Gawianski</strong> Front End Developer</h4>
-				<h4>Querés la tuya? <a target="_blank" href="https://iangawianski.github.io">Contactame!</a></h4>
+				<h4>Querés la tuya? <a target="_blank" href="https://iangawianski.github.io"><strong>Contactame!</strong></a></h4>
 			</div>
 			<div class="col-md-6 text-center footer">
 				<h3>Juana Rinaldi</h3>
@@ -155,6 +201,10 @@
 		</div>
 	</div>
 </footer>
+</div>
+
+
+	
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

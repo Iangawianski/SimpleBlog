@@ -2,51 +2,79 @@
 $("#textos").hide();
 $("#imagenes").hide();
 $("#containerPrincipal").hide();
+// $("#bio").hide();
+$("#musica").hide();
 
-//BOTON TEXTOS
-$("#btnTextos").click(function(){
-	$("#imagenes:visible").hide();
-    $("#textos").slideToggle();
-    $("body").scrollTop(605);
+$(":button").click(function() {
+    $("#body").removeClass("body"); 
 });
 
 //TEXTOS
+$("#btnTextos").click(function(){
+	$("#imagenes:visible").hide();
+	$("#bio:visible").hide();
+	$("#musica:visible").hide();
+    $("#textos").slideToggle();
+    $("body").scrollTop(635);
+});
+
+//CONTAINER CON TEXTOS
 $("#texto1").click(function(){
 	$("#containerPrincipal").show();
     $("#containerPrincipal").load("textos/texto1.html");
+    $("body").scrollTop(1300);
 });
 $("#texto2").click(function(){
 	$("#containerPrincipal").show();
 	$("#containerPrincipal").load("textos/texto2.html");
+	$("body").scrollTop(1300);
 });
 $("#texto3").click(function(){
+
 	$("#containerPrincipal").show();
 	$("#containerPrincipal").load("textos/texto3.html");
+	$("body").scrollTop(1300);
 });
-;
+$("#texto4").click(function(){
+	$("#containerPrincipal").show();
+    $("#containerPrincipal").load("textos/texto4.html");
+    $("body").scrollTop(1300);
+});
+$("#texto5").click(function(){
+	$("#containerPrincipal").show();
+	$("#containerPrincipal").load("textos/texto5.html");
+	$("body").scrollTop(1300);
+});
+$("#texto6").click(function(){
+	$("#containerPrincipal").show();
+	$("#containerPrincipal").load("textos/texto6.html");
+	$("body").scrollTop(1300);
+});
 
 //IMAGENES
 $("#btnImagenes").click(function() {
 	$("#textos:visible").hide();
+	$("#musica:visible").hide();
+	$("#bio:visible").hide();
 	$("#imagenes").slideToggle();
-	$("body").scrollTop(605);
+	$("body").scrollTop(635);
 })
 
-
-
-//about
-$("#closedAbout").hide();
-
-$("#close").click(function() {
-	$("#columnaContainerAbout").hide();
-	$(".columnaPrincipal").removeClass("col-md-8");
-	$(".columnaPrincipal").addClass("col-md-11");
-	$("#closedAbout").show();
+//MUSICA
+$("#btnMusica").click(function() {
+	$("#textos:visible").hide();
+	$("#bio:visible").hide();
+	$("#imagenes:visible").hide();
+	$("#musica").show();
+	$("body").scrollTop(635);
 })
 
-$("#showAbout").click(function() {
-	$("#columnaContainerAbout").show();
-	$("#closedAbout").hide();
-	$(".columnaPrincipal").removeClass("col-md-11");
-	$(".columnaPrincipal").addClass("col-md-8");
-});
+//BIO 
+$("#btnBio").click(function() {
+	$("#textos:visible").hide();
+	$("#imagenes:visible").hide();
+	$("#musica:visible").hide();
+	$("#bio").slideToggle();
+	$("body").scrollTop(635);
+})
+
